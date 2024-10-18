@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koláž</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center; /* Zarovnání textu na střed */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 sloupce */
+            grid-template-rows: repeat(8, auto); /* 8 řad */
+            gap: 10px; /* Mezera mezi obrázky */
+            max-width: 600px; /* Maximální šířka galerie */
+            margin: 0; /* Odstranění výchozího marginu */
+        }
+
+        .gallery img {
+            width: 100%; /* Šířka obrázků se přizpůsobí sloupci */
+            height: auto; /* Udržuje poměr stran */
+            object-fit: cover; /* Zajišťuje, že obrázky vyplní prostor bez deformace */
+            border: 5px solid white; /* Zvětšení rámečku kolem obrázků */
+            margin: 0; /* Odstranění mezer kolem obrázků */
+        }
+
+        .message {
+            margin-top: 20px; /* Vzdálenost mezi galerií a textem */
+            font-size: 24px; /* Velikost písma pro zprávu */
+            font-weight: bold; /* Tučný text */
+        }
+    </style>
+</head>
+<body>
+    <h1>Koláž</h1>
+    <div class="gallery">
+        <img src="Fotky/Image1.jpg" alt="Image 1">
+        <img src="Fotky/Image2.jpg" alt="Image 2">
+        <img src="Fotky/Image3.jpg" alt="Image 3">
+        <img src="Fotky/Image4.jpg" alt="Image 4">
+        <img src="Fotky/Image5.jpg" alt="Image 5">
+        <img src="Fotky/Image6.jpg" alt="Image 6">
+        <img src="Fotky/Image7.jpg" alt="Image 7">
+        <img src="Fotky/Image8.jpg" alt="Image 8">
+        <img src="Fotky/Image9.jpg" alt="Image 9">
+        <img src="Fotky/Image10.jpg" alt="Image 10">
+        <img src="Fotky/Image11.jpg" alt="Image 11">
+        <img src="Fotky/Image12.jpg" alt="Image 12">
+        <img src="Fotky/Image13.jpg" alt="Image 13">
+        <img src="Fotky/Image14.jpg" alt="Image 14">
+        <img src="Fotky/Image15.jpg" alt="Image 15">
+    </div>
+    <div class="message">Přeju hodně štěstí a zdravý ke 40 narozeninám</div>
+</body>
+</html>
